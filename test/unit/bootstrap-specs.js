@@ -92,7 +92,7 @@ describe('AndroidBootstrap', function () {
     it("should call sendCommand", async function () {
       let extra = {action: 'wake', params: {}};
       S.mocks.androidBootstrap.expects('sendCommand').once()
-        .withExactArgs('action', extra)
+        .withExactArgs('action', extra, 0)
         .returns('');
       await androidBootstrap.sendAction('wake');
       S.verify();
