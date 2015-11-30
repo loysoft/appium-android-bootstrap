@@ -1,8 +1,7 @@
 .idea
 target
 out
-bin
-bootstrap/bin/*
+./bin/
 bootstrap/local.properties
 bootstrap/.classpath
 bootstrap/target/
